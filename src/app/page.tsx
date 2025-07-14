@@ -11,17 +11,17 @@ import logo from '../../public/fishlogo.jpg'
 import {useState, useEffect} from 'react'
 export default function Home() {
 
-const [info, setInfo]=useState([])
+// const [info, setInfo]=useState([])
 
-const url="http://localhost:5000/menu"
-useEffect(()=>{
- fetch(url)
- .then(res=>res.json())
- .then(data=>setInfo(data))
- .catch((err)=>console.error("API fetch error:", err))
+// const url="http://localhost:5000/menu"
+// useEffect(()=>{
+//  fetch(url)
+//  .then(res=>res.json())
 //  .then(data=>setInfo(data))
-}, [])
-  console.log(info)
+//  .catch((err)=>console.error("API fetch error:", err))
+// //  .then(data=>setInfo(data))
+// }, [])
+//   console.log(info)
 
   return (
  <>
