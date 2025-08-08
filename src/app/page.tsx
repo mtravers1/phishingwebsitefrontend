@@ -7,8 +7,8 @@ import Banner from "./components/banner";
 import Form from "./components/form";
 import fish1 from '../../public/fishfood1.png'
 import fish2 from '../../public/fishfood2.jpg'
-import logo from '../../public/fishlogo.jpg'
-import {useState, useEffect} from 'react'
+// import logo from '../../public/fishlogo.jpg'
+// import {useState, useEffect} from 'react'
 export default function Home() {
 
 // const [info, setInfo]=useState([])
