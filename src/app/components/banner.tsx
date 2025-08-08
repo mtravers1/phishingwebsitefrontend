@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import fish from "../../../public/friedfish.png"
-import fish1 from "../../../public/fishfood1.png"
+// import fish1 from "../../../public/fishfood1.png"
 import fish2 from "../../../public/fishfood2.jpg"
 
 const slides = [

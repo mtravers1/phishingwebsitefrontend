@@ -41,10 +41,14 @@ export default function Home() {
         </section>
         <section className="flex justify-center flex-col pt-10 items-center">
           <h2>Place Your Order</h2>
-
+          <div>
+            <form>
+              <label>Name</label>
+            </form>
+          </div>
           <Form/>
             <button onClick={()=>{
-                  console.log(JSON.stringify(info)+'this is the api')
+                  // console.log(JSON.stringify(info)+'this is the api')
                 }}>button</button>
         </section>
 
