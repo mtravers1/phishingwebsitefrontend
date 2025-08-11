@@ -90,7 +90,7 @@ export default function CreditCardForm() {
     cvv: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
