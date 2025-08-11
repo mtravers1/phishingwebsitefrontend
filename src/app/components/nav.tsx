@@ -54,10 +54,10 @@ import Image from "next/image";
 import logo from '../../../public/fishlogo.jpg'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [toggle, setToggle]=useState(false)
-const tog = ()=>{
-        setToggle(!toggle)
-    }
+//   const [toggle, setToggle]=useState(false)
+// const tog = ()=>{
+//         setToggle(!toggle)
+//     }
 
   return (
     <nav className="bg-amber-900 text-white shadow-lg">

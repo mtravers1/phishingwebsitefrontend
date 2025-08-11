@@ -15,7 +15,7 @@ import fish1 from '../../../public/fish1.jpeg'
 import fish2 from '../../../public/fishfood2.jpg'
 import greens from '../../../public/greens.jpg'
 import wings from '../../../public/wings.jpeg'
-import yams from '../../../public/yams.jpeg'
+// import yams from '../../../public/yams.jpeg'
 import macncheese from '../../../public/macncheese.jpg'
 
 
@@ -67,11 +67,8 @@ import macncheese from '../../../public/macncheese.jpg'
 import Image from "next/image";
 
 
-const Reviews=[
-    {
-        
-    }
-]
+
+
 const images = [
   fish1,
     fish2,

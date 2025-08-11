@@ -3,16 +3,15 @@ import './page.css'
 import Slider from './components/slider'
 import Image from "next/image";
 import fish from '../../public/friedfish.png'
-import Nav from '../app/components/nav'
 import Banner from "./components/banner";
 import Form from "./components/form";
-import fish1 from '../../public/fishfood1.png'
-import fish2 from '../../public/fishfood2.jpg'
-import greens from '../../public/greens.jpg'
-import wings from '../../public/wings.jpeg'
-import yams from '../../public/yams.jpeg'
-import macncheese from '../../public/macncheese.jpg'
-import ProductFilter from './components/productfilter';
+// import fish1 from '../../public/fishfood1.png'
+// import fish2 from '../../public/fishfood2.jpg'
+// import greens from '../../public/greens.jpg'
+// import wings from '../../public/wings.jpeg'
+// import yams from '../../public/yams.jpeg'
+// import macncheese from '../../public/macncheese.jpg'
+// import ProductFilter from './components/productfilter';
 import ReviewSection from './components/review';
 // import ReviewsSection from './components/review';
 // import logo from '../../public/fishlogo.jpg'

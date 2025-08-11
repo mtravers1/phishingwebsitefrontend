@@ -46,7 +46,7 @@ export default function ProductFilter() {
       {filteredProducts.length > 0 ? (
           <div className="grid md:grid-cols-4 gap-10 flex-col justify-center align-middle">
           {filteredProducts.map((product) => (
-            <div className="bg-white shadow-md rounded-lg p-6 text-center flex flex-col justify-center items-center ">
+            <div key={product.id} className="bg-white shadow-md rounded-lg p-6 text-center flex flex-col justify-center items-center ">
                         <Image
                           id="photo"
                            className="dark:invert align-middle"

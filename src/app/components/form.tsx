@@ -79,10 +79,10 @@
 // components/CreditCardForm.jsx
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import Link from "next/link";
 export default function CreditCardForm() {
-  const router = useRouter();
+//   const router = useRouter();
   const [form, setForm] = useState({
     name: "",
     cardNumber: "",
@@ -90,13 +90,13 @@ export default function CreditCardForm() {
     cvv: "",
   });
 
-//   const handleChange = (e) => {
-//     setForm({ ...form, [e.target.name]: e.target.value });
-//   };
+  const handleChange = (e:any) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const handleChange=()=>{
-
-  }
+//   const handleChange=()=>{
+   
+//   }
 
   const handleSubmit=()=>{
 
