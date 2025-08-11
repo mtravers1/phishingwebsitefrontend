@@ -159,8 +159,8 @@ export default function EvilFishFood() {
         <button><Link href="/">Click here to Go back home and dont let this happen again</Link></button>
         <pre className="fish-ascii">
 {`
-><(((º>     ><(((º>     ><(((º>     ><(((º>     ><(((º>    
-      ><(((º>     ><(((º>     ><(((º>     ><(((º>      
+><(((º>   ><(((º>     ><(((º>       
+      ><(((º>     ><(((º>           
 `}
         </pre>
       </main>
