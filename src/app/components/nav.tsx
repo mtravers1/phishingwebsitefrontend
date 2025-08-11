@@ -100,6 +100,8 @@ export default function Navbar() {
             <Link href="/contactus" className="hover:text-yellow-300 transition">Contact</Link>
             <Link href="/login" className="block hover:text-yellow-300">Login</Link>
             <Link href="/cart" className="block hover:text-yellow-300">Cart</Link>
+                                    <Link href="/phished" className="block hover:text-yellow-300">Phishing</Link>
+
           
           </div>
 
@@ -122,6 +124,9 @@ export default function Navbar() {
             <Link href="/contactus" className="block hover:text-yellow-300">Contact</Link>
             <Link href="/login" className="block hover:text-yellow-300">Login</Link>
             <Link href="/cart" className="block hover:text-yellow-300">Cart</Link>
+                        <Link href="/phished" className="block hover:text-yellow-300">Phishing</Link>
+
+
           
             </div>
         </div>
