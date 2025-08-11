@@ -1,5 +1,6 @@
 "use client";
-
+import './page.css'
+import Slider from './components/slider'
 import Image from "next/image";
 import fish from '../../public/friedfish.png'
 import Nav from '../app/components/nav'
@@ -7,6 +8,13 @@ import Banner from "./components/banner";
 import Form from "./components/form";
 import fish1 from '../../public/fishfood1.png'
 import fish2 from '../../public/fishfood2.jpg'
+import greens from '../../public/greens.jpg'
+import wings from '../../public/wings.jpeg'
+import yams from '../../public/yams.jpeg'
+import macncheese from '../../public/macncheese.jpg'
+import ProductFilter from './components/productfilter';
+import ReviewSection from './components/review';
+// import ReviewsSection from './components/review';
 // import logo from '../../public/fishlogo.jpg'
 // import {useState, useEffect} from 'react'
 export default function Home() {
@@ -28,7 +36,6 @@ export default function Home() {
         <title>OceanBite - Premium Fish Food</title>
 
       <main className="min-h-screen bg-blue-50 font-sans">
-           <Nav/>
         {/* Hero Section */}
         <section className="bg-blue-600 text-white text-center py-20 px-4">
              
@@ -40,65 +47,48 @@ export default function Home() {
           </button>
         </section>
         <section className="flex justify-center flex-col pt-10 items-center">
-          <h2>Place Your Order</h2>
-          <div>
-            <form>
-              <label>Name</label>
-            </form>
-          </div>
-          <Form/>
-            <button onClick={()=>{
-                  // console.log(JSON.stringify(info)+'this is the api')
-                }}>button</button>
+          
+          {/* <Form/> */}
+
+
+
+
+        <section>
         </section>
 
-        {/* Products Section */}
-        
-        <section className="py-16 px-6 max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-blue-800 mb-12">Our Products</h2>
-          <div className="grid md:grid-cols-4 gap-10 flex-col justify-center align-middle">
-            {[
-              { name: "Tropical Flakes", desc: "Ideal for freshwater fish", price: "$8.99", photo:fish},
-              { name: "Sinking Pellets", desc: "Perfect for bottom feeders", price: "$12.49", photo:fish1 },
-              { name: "Color Boost Formula", desc: "Enhances fish colors naturally", price: "$10.99", photo:fish2 },
-              { name: "Color Boost Formula", desc: "Enhances fish colors naturally", price: "$10.99", photo:fish2 },
 
-            ].map((product, idx) => (
-              <div key={idx} className="bg-white shadow-md rounded-lg p-6 text-center flex flex-col justify-center items-center">
- <Image
-               className="dark:invert align-middle"
-              src={product.photo}
-               alt="Vercel logomark"
-               width={200}
-              height={200}
-            />                <h3 className="text-xl font-bold text-blue-700">{product.name}</h3>
-                <p className="text-gray-600 my-2">{product.desc}</p>
-                <p className="text-blue-500 font-semibold">{product.price}</p>
-                <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-                  Buy Now
-                </button>
-              </div>
-            ))}
+
+
+
+        <section>
+          <ReviewSection/>
+        </section>
+
+        
+        </section>
+        <section id="container1">
+          <div>
+            <Image width={500} src={fish} alt={""}/>
+
           </div>
-         
-          
-          {/* <div>
-            {
-              info.map((item, index)=>(
-                <div key={index}>
-                  <h2>{item.name}</h2>
-                  <h2>$ {item.price}</h2>
-                </div>  
-              ))
-            }
-          </div> */}
+          <div>
+                Best fish in the nation. Cooked and seasoned perfectly for the most flavorful delicious fish you have ever tried.
+
+          </div>
+        </section>
+        {/* <Slider/> */}
+
+        {/* Products Section */}
+        <Form/>
+
+       
+        <section>
+          <h1>Take a look at our fan favorites</h1>
+          <Slider/>
         </section>
 
         {/* Contact Footer */}
-        <footer className="bg-blue-800 text-white py-8 text-center">
-          <p className="mb-2">Contact us at <a href="mailto:support@oceanbite.com" className="underline">support@oceanbite.com</a></p>
-          <p>&copy; {new Date().getFullYear()} OceanBite. All rights reserved.</p>
-        </footer>
+        
       </main>
     </>
   //   <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">

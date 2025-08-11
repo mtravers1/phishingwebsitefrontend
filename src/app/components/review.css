@@ -1,0 +1,16 @@
+#reviews{
+    display: flex;
+    justify-content: center;
+
+}
+
+#reviewsection{
+
+}
+
+@media(max-width:600px){
+    #reviews{
+        display: flex;
+        flex-direction: column;
+    }
+}

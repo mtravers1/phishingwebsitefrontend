@@ -34,7 +34,7 @@
     "Client/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-  ],
+, "src/app/components/review.jsx", "src/app/components/reviewcards.jsx"  ],
   "exclude": [
     "node_modules"
   ]
