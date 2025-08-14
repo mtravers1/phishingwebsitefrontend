@@ -22,6 +22,8 @@ import ribs from '../../../public/ribs.jpg'
 import wings from '../../../public/wings.jpeg'
 import cornbread from '../../../public/cornbread.png'
 import blackeyepeas from '../../../public/blackeyepeas.jpg'
+import catfish from "../../../public/catfish.jpg"
+import shrimp from "../../../public/shrimp.jpg"
 export const products = [
               { id:1,name: "Fish", desc: "Ideal for freshwater fish", price: "$8.99", photo:fish, category: "Seafood"},
               { id:2, name: "Mac N Cheeze", desc: "Perfect for bottom feeders", price: "$12.49", photo:macncheese, category: "Sides"},
@@ -29,8 +31,8 @@ export const products = [
               { id:4, name: "Candy yams", desc: "Enhances fish colors naturally", price: "$10.99", photo:yams, category: "Sides" },
               // { name: "Chick Wings", desc: "Ideal for freshwater fish", price: "$8.99", photo: },
               { id:5, name: "Sinking Pellets", desc: "Perfect for bottom feeders", price: "$12.49", photo:fish1, category: "Seafood" },
-              { id:6, name: "Shrimp", desc: "Enhances fish colors naturally", price: "$10.99", photo:fish2, category: "Seafood" },
-              { id:7, name: "Catfish", desc: "Enhances fish colors naturally", price: "$10.99", photo:fish2, category: "Seafood" },
+              { id:6, name: "Shrimp", desc: "Enhances fish colors naturally", price: "$10.99", photo:shrimp, category: "Seafood" },
+              { id:7, name: "Catfish", desc: "Enhances fish colors naturally", price: "$10.99", photo:catfish, category: "Seafood" },
               { id:8, name: "Corn Bread", desc: "Ideal for freshwater fish", price: "$8.99", photo:cornbread, category: "Sides"},
               { id:9, name: "Mashed Potatoes", desc: "Perfect for bottom feeders", price: "$12.49", photo:mashedpotatoes, category: "Sides" },
               { id:10, name: "Fried Chicken", desc: "Enhances fish colors naturally", price: "$10.99", photo:friedchicken, category: "Seafood" },
