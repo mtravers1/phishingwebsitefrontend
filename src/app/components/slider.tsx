@@ -88,6 +88,7 @@ const images = [
  greens,
  wings,
   macncheese,
+  pie
 ];
 export default function InfiniteCarousel() {
   // Duplicate images for seamless loop
