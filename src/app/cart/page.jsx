@@ -16,7 +16,7 @@ export default function CartPage() {
 </h1>
 
       {cart.length === 0 ? (
-        <Link href="/menu">No Food selected Go back and make a selection</Link>
+        <Link href="/menu">No Food selected Go back and make a selection Click here to make selection</Link>
       ) : (
         <>
                       {/* { id:1,name: "Fish", desc: "Ideal for freshwater fish", price: "$8.99", photo:fish, category: "Seafood"}, */}

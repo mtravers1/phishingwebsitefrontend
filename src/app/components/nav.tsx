@@ -55,7 +55,7 @@ import logo from '../../../public/fishlogo.jpg'
 import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
-    const { cart, removeFromCart, clearCart } = useCart();
+    const { cart } = useCart();
   
   const [isOpen, setIsOpen] = useState(false);
 //   const [toggle, setToggle]=useState(false)
