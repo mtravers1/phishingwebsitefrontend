@@ -4,15 +4,15 @@ import Image from "next/image";
 import fish from "../../../public/friedfish.png"
 // import fish1 from "../../../public/fishfood1.png"
 import fish2 from "../../../public/fishfood2.jpg"
-import greens from '../../../public/greens.jpg'
-import yams from '../../../public/yams.jpeg'
+// import greens from '../../../public/greens.jpg'
+// import yams from '../../../public/yams.jpeg'
 import macncheese from '../../../public/macncheese.jpg'
-import friedchicken from '../../../public/friedchicken.jpg'
-import mashedpotatoes from '../../../public/mashedpotatoes.jpg'
+// import friedchicken from '../../../public/friedchicken.jpg'
+// import mashedpotatoes from '../../../public/mashedpotatoes.jpg'
 import oxtail from '../../../public/oxtail.jpg'
 import pie from '../../../public/pie.jpg'
 import ribs from '../../../public/ribs.jpg'
-import wings from '../../../public/wings.jpeg'
+// import wings from '../../../public/wings.jpeg'
 import cornbread from '../../../public/cornbread.png'
 import blackeyepeas from '../../../public/blackeyepeas.jpg'
 const slides = [
