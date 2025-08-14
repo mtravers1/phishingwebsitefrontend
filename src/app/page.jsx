@@ -34,12 +34,12 @@ export default function Home() {
 
   return (
  <>
-        <title>PhishFryFridays- Premium Fish Food</title>
+        <title>OceanBitesFood- Premium Fish Food</title>
 
       <main className="min-h-screen bg-blue-50 font-sans">
         {/* Hero Section */}
         <section className="bg-blue-600 text-white text-center py-20 px-4">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Phishfryfridays</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">OceanBitesFood</h1>
 
           <GraduationBanner/>
           <Banner/>
