@@ -7,7 +7,6 @@ export default function MaliciousGraduationForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Thanks for submitting! Name: ${name}, Email: ${email}`);
   };
 
   return (
