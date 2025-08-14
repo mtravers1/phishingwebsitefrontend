@@ -34,7 +34,7 @@
     "Client/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-, "src/app/components/review.jsx", "src/app/components/reviewcards.jsx", "src/app/page.jsx", "src/app/components/form.jsx"  ],
+, "src/app/components/review.jsx", "src/app/components/reviewcards.jsx", "src/app/page.jsx", "src/app/components/form.jsx", "src/app/components/productfilter.jsx"  ],
   "exclude": [
     "node_modules"
   ]

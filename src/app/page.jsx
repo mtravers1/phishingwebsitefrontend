@@ -13,6 +13,8 @@ import Form from "./components/form";
 // import macncheese from '../../public/macncheese.jpg'
 // import ProductFilter from './components/productfilter';
 import ReviewSection from './components/review';
+import GraduationBanner from './components/gradbanner'
+import Link from 'next/link';
 // import ReviewsSection from './components/review';
 // import logo from '../../public/fishlogo.jpg'
 // import {useState, useEffect} from 'react'
@@ -37,12 +39,12 @@ export default function Home() {
       <main className="min-h-screen bg-blue-50 font-sans">
         {/* Hero Section */}
         <section className="bg-blue-600 text-white text-center py-20 px-4">
-             
+          <GraduationBanner/>
           <Banner/>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">OceanBite</h1>
           <p className="text-xl md:text-2xl">Nourishing your fish with the best from the ocean</p>
           <button className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition">
-           Shop Now
+          <Link href="/menu">Take a look at our menu</Link>
           </button>
         </section>
         <section className="flex justify-center flex-col pt-10 items-center">
@@ -78,7 +80,6 @@ export default function Home() {
         {/* <Slider/> */}
 
         {/* Products Section */}
-        <Form/>
 
        
         <section>

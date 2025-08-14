@@ -2,7 +2,11 @@
 import { useState } from "react";
 import { products } from '../data/data';
 import Image from "next/image";
+import { useCart } from "../context/CartContext";
+import Link from "next/link";
 export default function ProductFilter() {
+  const { cart, addToCart } = useCart();
+
   const [category, setCategory] = useState("All");
   const [search, setSearch] = useState("");
 
@@ -12,7 +16,7 @@ export default function ProductFilter() {
     const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase());
     return matchesCategory && matchesSearch;
   });
-
+console.log(products)
   return (
     <div className="">
       <h2 className="text-2xl font-bold mb-4">Menu</h2>
@@ -42,7 +46,7 @@ export default function ProductFilter() {
       </div>
     
       {/* Product List */}
-      
+    
       {filteredProducts.length > 0 ? (
           <div className="grid md:grid-cols-4 gap-10 flex-col justify-center align-middle">
           {filteredProducts.map((product) => (
@@ -55,53 +59,52 @@ export default function ProductFilter() {
                            width={200}
                           height={200}
                           // objectFit=''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 />                <h3 className="text-xl font-bold text-blue-700">{product.name}</h3>
                             <p className="text-gray-600 my-2">{product.desc}</p>
-                            <p className="text-blue-500 font-semibold">{product.price}</p>
-                            <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-                              Buy Now
-                            </button>
+         <button onClick={() => addToCart(product)} className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Select</button>
+
+                               
+
                           </div>
           ))}
         </div>
       ) : (
-        <p className="text-gray-500">No products found.</p>
+        <p className="text-gray-500">No items found.</p>
       )}
+
     </div>
+
+
   );
 }
+
+// "use client";
+
+// import { useCart } from "../context/CartContext";
+
+// export default function Products() {
+//   const { cart, addToCart } = useCart();
+
+//   const products = [
+//     { id: 1, name: "Product A", price: 20 },
+//     { id: 2, name: "Product B", price: 30 },
+//   ];
+
+//   return (
+//     <div>
+//       <h2>Products</h2>
+//       {products.map(p => (
+//         <div key={p.id}>
+//           <h4>{p.name}</h4>
+//           <p>${p.price}</p>
+//           <button onClick={() => addToCart(p)}>Add to Cart</button>
+//         </div>
+//       ))}
+
+//       <h3>Cart:</h3>
+//       {cart.length === 0 ? <p>Empty</p> : cart.map(item => (
+//         <p key={item.id}>{item.name} x {item.quantity}</p>
+//       ))}
+//     </div>
+//   );
+// }

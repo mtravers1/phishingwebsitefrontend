@@ -147,10 +147,10 @@ export default function EvilFishFood() {
         </h1>
         <div className="alert-box">
           ALERT!<br />
-          You Have Been Phished — including:<br />
-          - Credit Card Info<br />
-          - Personal Contacts<br />
-          - Passwords & Cookies<br />
+          You Have Been Cat Phished — including:<br />
+          - Name<br />
+          - Email<br />
+          - We even found out your social security..... or at least next time we will<br />
           <br />
           {/* No amount of fish food can save you now...<br /> */}
           <br />

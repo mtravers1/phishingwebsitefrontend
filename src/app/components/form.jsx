@@ -1,238 +1,83 @@
-// "use client";
-
-// import React from "react";
-// import { useState } from "react";
-// const Form=()=>{
-//     const [first, setFirst]=useState('')
-//     const [last, setLast]=useState('')
-//     const [address, setAddress]=useState('')
-//     const [cardNumber, setCardNumber]=useState('')
-//     const [zip, setZip]=useState('')
-//     const [choice, setChoice]=useState('')
-//     // console.log(first)
-//     return(
-
-//         <div id="f" className="w-2/3 align-middle pt-2 pb-2">
-//             <p>{first}</p>
-//             <p>{last}</p>
-//             <p>{address}</p>
-//             <p>{zip}</p>
-//             <p>{choice}</p>
-
-//             <form id="" className="flex-col">
-//             <div className="flex justify-evenly">
-//             <label>First Name</label>
-//             <input 
-//             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-//             value={first}
-//             onChange={(e)=>setFirst(e.target.value)}/>
-//             </div>
-//             <div className="flex justify-evenly">
-//             <label>Last Name</label>
-//             <input
-//             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-//             value={last}
-//             onChange={(e)=>setLast(e.target.value)}
-//             />
-//             </div>
-//             <div className="flex justify-evenly">
-//             <label>Address</label>
-//             <input
-//             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-//             value={address}
-//             onChange={(e)=>setAddress(e.target.value)}
-//             />
-//             </div>
-//             <div className="flex justify-between">
-//             <label>Card Number</label>
-//             <button onClick={()=>alert("you just been phished")}><input
-//             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-//             value={cardNumber}
-//             onChange={(e)=>setCardNumber(e.target.value)}
-//             /></button>
-            
-//             </div>
-//             <div className="flex justify-between">
-//             <label>Zip</label>
-//             <input
-//             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-//             value={zip}
-//             onChange={(e)=>setZip(e.target.value)}
-//             />
-//             </div>
-//              <div className="flex justify-between">
-//             <label>Choice</label>
-//             <input
-//             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
-//             value={choice}
-//             onChange={(e)=>setChoice(e.target.value)}
-//             />
-//             </div>
-//             </form>
-//         </div>
-//     )
-// }
-
-// export default Form
-
-
-// components/CreditCardForm.jsx
 "use client";
 import { useState } from "react";
-// import { useRouter } from "next/navigation";
 import Link from "next/link";
-export default function CreditCardForm() {
-//   const router = useRouter();
-  const [form, setForm] = useState({
-    name: "",
-    cardNumber: "",
-    expiry: "",
-    cvv: "",
-  });
+export default function MaliciousGraduationForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thanks for submitting! Name: ${name}, Email: ${email}`);
   };
 
-//   const handleChange=()=>{
-   
-//   }
-
-  const handleSubmit=()=>{
-
-  }
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     // Here you would normally do validation and send data to your backend/payment processor
-
-//     // For now, just redirect to a thank you page
-//     router.push("/phished");
-//   };
-
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="mx-auto bg-blue-50 p-6 rounded-lg shadow-md"
-    >
-      <h2 className="text-2xl font-semibold mb-6 text-blue-800 text-center">
-        Payment Information
-      </h2>
-      <label className="block mb-4">
-        <span className="block mb-1 font-medium text-gray-700">Address</span>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        //   required
-          placeholder="John Doe"
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </label>
-      
-      <label className="block mb-4">
-        <span className="block mb-1 font-medium text-gray-700">Social Security</span>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        //   required
-          placeholder="John Doe"
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </label>
-      <label className="block mb-4">
-        <span className="block mb-1 font-medium text-gray-700">Zip</span>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        //   required
-          placeholder="John Doe"
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </label>
-      <label className="block mb-4">
-        <span className="block mb-1 font-medium text-gray-700">First Name</span>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        //   required
-          placeholder="John Doe"
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </label>
-
-      <label className="block mb-4">
-        <span className="block mb-1 font-medium text-gray-700">LastName</span>
-        <input
-          type="text"
-          name="name"
-          value={form.name}
-          onChange={handleChange}
-        //   required
-          placeholder="John Doe"
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </label>
-
-      <label className="block mb-4">
-        <span className="block mb-1 font-medium text-gray-700">Card Number</span>
-        <input
-          type="password"
-          name="cardNumber"
-          value={form.cardNumber}
-          onChange={handleChange}
-          maxLength={16}
-          pattern="\d{16}"
-          placeholder="1234 5678 9012 3456"
-        //   required
-          className="w-full p-2 border border-gray-300 rounded"
-        />
-      </label>
-
-      <div className="flex space-x-4 mb-6">
-        <label className="flex-1">
-          <span className="block mb-1 font-medium text-gray-700">Expiry Date</span>
-          <input
-            type="text"
-            name="expiry"
-            value={form.expiry}
-            onChange={handleChange}
-            pattern="(0[1-9]|1[0-2])\/?([0-9]{2})"
-            placeholder="MM/YY"
-            // required
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-        </label>
-
-        <label className="flex-1">
-          <span className="block mb-1 font-medium text-gray-700">CVV</span>
-          <input
-            type="password"
-            name="cvv"
-            value={form.cvv}
-            onChange={handleChange}
-            maxLength={4}
-            pattern="\d{3,4}"
-            placeholder="123"
-            // required
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-        </label>
+    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Animated Glitch Background */}
+      <div className="absolute inset-0">
+        <div className="absolute w-full h-full bg-gradient-to-r from-purple-900 via-pink-900 to-purple-900 animate-gradient-x opacity-50"></div>
+        <div className="absolute w-full h-full bg-[url('/images/hacker-bg.jpg')] bg-cover bg-center mix-blend-overlay opacity-30"></div>
       </div>
 
-      <button
-        type="submit"
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition">
-        <Link href="phished">Submit Payment</Link>
-      </button>
-    </form>
+      {/* Form Container */}
+      <form
+        onSubmit={handleSubmit}
+        className="w-3/4 relative z-10 bg-black/70 border-2 border-pink-500 rounded-2xl p-10 flex flex-col gap-6 shadow-lg"
+      >
+        <h2 className="text-2xl font-bold text-pink-400 text-center mb-4 animate-glitch">
+          🎓 Submit for your free graduation meal 
+        </h2>
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="p-3 rounded-md bg-black/50 border border-pink-500 text-white placeholder-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          required
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="p-3 rounded-md bg-black/50 border border-pink-500 text-white placeholder-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          required
+        />
+
+        <button
+          type="submit"
+          className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 rounded-lg transition-transform transform hover:scale-105 shadow-lg"
+        >
+          <Link href="/phished">Submit 🎓</Link>
+        </button>
+      </form>
+
+      {/* Styles */}
+      <style jsx>{`
+        @keyframes glitch {
+          0% { text-shadow: 2px 2px red; }
+          20% { text-shadow: -2px -2px cyan; }
+          40% { text-shadow: 2px -2px lime; }
+          60% { text-shadow: -2px 2px magenta; }
+          80% { text-shadow: 2px 2px yellow; }
+          100% { text-shadow: 0 0 #fff; }
+        }
+
+        .animate-glitch {
+          animation: glitch 1s infinite;
+        }
+
+        @keyframes gradient-x {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+
+        .animate-gradient-x {
+          animation: gradient-x 5s ease infinite;
+          background-size: 200% 200%;
+        }
+      `}</style>
+    </div>
   );
 }
-
-

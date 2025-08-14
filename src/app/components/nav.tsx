@@ -49,10 +49,14 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons
+import { CookingPot, Menu, X } from "lucide-react"; // icons
 import Image from "next/image";
 import logo from '../../../public/fishlogo.jpg'
+import { useCart } from "../context/CartContext";
+
 export default function Navbar() {
+    const { cart, removeFromCart, clearCart } = useCart();
+  
   const [isOpen, setIsOpen] = useState(false);
 //   const [toggle, setToggle]=useState(false)
 // const tog = ()=>{
@@ -99,8 +103,7 @@ export default function Navbar() {
             <Link href="/about" className="hover:text-yellow-300 transition">About Us</Link>
             <Link href="/contactus" className="hover:text-yellow-300 transition">Contact</Link>
             <Link href="/login" className="block hover:text-yellow-300">Login</Link>
-            <Link href="/cart" className="block hover:text-yellow-300">Cart</Link>
-                                    <Link href="/phished" className="block hover:text-yellow-300">Phishing</Link>
+            <Link href="/cart" className="block hover:text-yellow-300"><CookingPot size={24} /></Link><p className="bg-blue-500 rounded p-[3px] text-[11px] relative right-[33px] bottom-[15px]">{cart.length}</p>
 
           
           </div>
@@ -123,8 +126,7 @@ export default function Navbar() {
             <Link href="/about" className="block hover:text-yellow-300">About Us</Link>
             <Link href="/contactus" className="block hover:text-yellow-300">Contact</Link>
             <Link href="/login" className="block hover:text-yellow-300">Login</Link>
-            <Link href="/cart" className="block hover:text-yellow-300">Cart</Link>
-                        <Link href="/phished" className="block hover:text-yellow-300">Phishing</Link>
+            <Link href="/cart" className="block hover:text-yellow-300"><CookingPot size={24} /></Link><p className="bg-blue-500 rounded text-[11px] ">{cart.length}</p>
 
 
           
