@@ -34,14 +34,15 @@ export default function Home() {
 
   return (
  <>
-        <title>OceanBite - Premium Fish Food</title>
+        <title>PhishFryFridays- Premium Fish Food</title>
 
       <main className="min-h-screen bg-blue-50 font-sans">
         {/* Hero Section */}
         <section className="bg-blue-600 text-white text-center py-20 px-4">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Phishfryfridays</h1>
+
           <GraduationBanner/>
           <Banner/>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">OceanBite</h1>
           <p className="text-xl md:text-2xl">Nourishing your fish with the best from the ocean</p>
           <button className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition">
           <Link href="/menu">Take a look at our menu</Link>
@@ -83,7 +84,8 @@ export default function Home() {
 
        
         <section>
-          <h1>Take a look at our fan favorites</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">Take a look at our fan favorites</h1>
+
           <Slider/>
         </section>
 

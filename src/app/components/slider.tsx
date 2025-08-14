@@ -65,11 +65,24 @@ import macncheese from '../../../public/macncheese.jpg'
 
 
 import Image from "next/image";
-
-
+import yams from '../../../public/yams.jpeg'
+import friedchicken from '../../../public/friedchicken.jpg'
+import mashedpotatoes from '../../../public/mashedpotatoes.jpg'
+import oxtail from '../../../public/oxtail.jpg'
+import pie from '../../../public/pie.jpg'
+import ribs from '../../../public/ribs.jpg'
+import cornbread from '../../../public/cornbread.png'
+import blackeyepeas from '../../../public/blackeyepeas.jpg'
 
 
 const images = [
+  yams,
+  friedchicken,
+  mashedpotatoes,
+  oxtail,
+  ribs,
+  cornbread,
+  blackeyepeas,
   fish1,
     fish2,
  greens,

@@ -60,7 +60,7 @@ console.log(products)
                           height={200}
                           // objectFit=''
 />                <h3 className="text-xl font-bold text-blue-700">{product.name}</h3>
-                            <p className="text-gray-600 my-2">{product.desc}</p>
+                            {/* <p className="text-gray-600 my-2">{product.desc}</p> */}
          <button onClick={() => addToCart(product)} className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Select</button>
 
                                
